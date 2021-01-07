@@ -1,0 +1,16 @@
+/* Setup */
+@import 'reset';
+@import 'variables';
+@import 'wp';
+
+@import 'typography';
+
+@import 'global';
+@import "common/header";
+@import "common/footer";
+
+/* Pages */
+@import "pages/home";
+@import "pages/page";
+@import "pages/404";
+@import "pages/foto";

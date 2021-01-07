@@ -1,0 +1,60 @@
+/* Colors */
+$color-primary: #ea1947;
+$color-secondary: #89674e;
+
+$font-primary: 'Roboto Mono', monospace;
+$font-secondary: 'Merriweather', serif;
+
+@mixin small() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin from-small() {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin from-medium() {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin medium() {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin containerSize() {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media only screen and (max-width: 1480px) {
+    @content;
+  }
+}
+
+@mixin large() {
+  @media only screen and (max-width: 1580px) {
+    @content;
+  }
+}
+
+@mixin retina() {
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) { 
+    @content;
+  }
+}

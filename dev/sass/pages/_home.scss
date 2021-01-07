@@ -1,0 +1,15 @@
+.home {
+  .header {
+    &__burger {
+      display: none;
+    }
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .footer {
+    display: none;
+  }
+}

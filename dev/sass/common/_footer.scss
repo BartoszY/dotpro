@@ -1,0 +1,235 @@
+.floating-links {
+  position: fixed;
+  top: calc(100vh - 300px);
+  left: 75px;
+
+  width: 600px;
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  
+  transform-origin: left;
+  transform: rotate(-90deg);
+
+  a {
+    font-weight: 400;
+    font-size: 12px;
+
+    &::after {
+      margin: 0 25px;
+      content: '|';
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.footer {
+  position: relative;
+  background-image: url('../img/footer.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: #fff;
+
+  &__container {
+    padding: 100px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+
+    @include containerSize {
+      grid-gap: 25px;
+    }
+
+    @include small {
+      padding: 60px 20px;
+      display: block;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 45px;
+    font-size: 65px;
+    font-weight: 900;
+    line-height: .8;
+    color: $color-primary;
+    text-transform: uppercase;
+
+    @include containerSize {
+      font-size: 45px;
+    }
+
+    @include small {
+      font-size: 38px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    @include medium {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    // font-size: 18px;
+    // font-weight: 500;
+    // letter-spacing: 1px;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__newsletter {
+    margin: 45px 0;
+    // font-size: 18px;
+    // font-weight: 500;
+    // letter-spacing: 1px;
+
+    .custom-tnp {
+      position: relative;
+      padding: 0;
+      margin: 0;
+
+      max-width: 280px;
+
+      // label {
+      //   display: none;
+      // }
+
+      input {
+        width: 100%;
+        display: block;
+        padding: 10px 15px !important;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        height: 38px !important;
+      }
+    }
+
+    // .tnp-field-button
+    .tnp-submit {
+      position: absolute !important;
+      right: 0;
+      top: 0 !important;
+
+      display: flex !important;
+      line-height: 1 !important;
+      padding: 0 !important;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 16px !important;
+      width: 40px !important;
+      height: 100% !important;
+      
+      background-color: $color-primary !important;
+      transition: .3s;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-secondary !important;
+      }
+    }
+  }
+
+  &__sm {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    a {
+      margin-left: 10px;
+      filter: brightness(0) invert(1);
+
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+
+  .wpcf7 {
+    br {
+      display: none;
+    }
+
+    .wpcf7-text, .wpcf7-textarea, .wpcf7-submit {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+
+    .wpcf7-text, .wpcf7-textarea {
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      display: block;
+      width: 100%;
+      border: none;
+    }
+
+    // .wpcf7-textarea {
+      // height: 100px;
+    // }
+
+    .wpcf7-submit {
+      font-size: 18px;
+      font-weight: bold;
+
+      background-color: $color-primary;
+      border: none;
+      color: #fff;
+      padding: 10px;
+      width: 100%;
+      transition: .3s;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-secondary;
+      }
+    }
+
+    .wpcf7-not-valid-tip {
+      margin: -10px 0 15px;
+      font-size: 12px;
+    }
+
+    .wpcf7-response-output {
+      margin: 0;
+      border-width: 1px;
+      padding: 15px;
+      font-size: 14px;
+    }
+  }
+
+  &__copyright {
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,148 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+--scrollbarBG: #000;
+--thumbBG: #666;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+html::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.main {
+  padding-top: 120px;
+
+  min-height: calc(100vh - 120px);
+
+  // @include desktop {
+  //   padding-top: 80px;
+  // }
+
+  // @include medium {
+  //   padding-top: 70px;
+  // }
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1290px;
+  padding: 0 20px;
+}
+
+.page-content {
+  @include large {
+    padding-left: 150px;
+    padding-right: 15px;
+  }
+
+  @include medium {
+    padding: 0;
+  }
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 25px;
+
+    font-size: 16px;
+    line-height: 21px;
+
+    @include desktop {
+      grid-column-gap: 25px;
+    }
+  }
+}
+
+
+// .intro {
+//   position: fixed;
+//   z-index: 8000;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: #fff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transition: 1s;
+
+//   & > img {
+//     position: absolute;
+//     opacity: 0;
+//     animation: 3s fade;
+//     max-width: 200px;
+
+//     @include medium {
+//       width: 40vw;
+//     }
+//   }
+// }
+
+// .site-title {
+//   text-align: center;
+//   font-weight: 500;
+//   text-transform: uppercase;
+//   font-size: 40px;
+  
+//   opacity: 0;
+//   animation: 3s fade 3s;
+
+//   cursor: default;
+
+//   @include medium {
+//     font-size: 26px;
+//   }
+
+//   strong {
+//     font-weight: 900;
+//   }
+// }
+
+// @keyframes fade {
+//   0% {opacity: 0;}
+//   50% {opacity: 1;}
+//   100% {opacity: 0;}
+// }
+
+
+// .hide-on-mobile {
+//   @include small {
+//     display: none;
+//   }
+// }
+
+// .hide-on-desktop {
+//   @include from-small {
+//     display: none;
+//   }
+// }
