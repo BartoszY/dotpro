@@ -1,0 +1,41 @@
+// .page-thumb {
+//   margin: 45px 0 15px;
+//   width: 100%;
+//   max-height: 600px;
+//   object-fit: cover;
+
+//   @include small {
+//     margin: 20px 0 0;
+//   }
+// }
+
+// .page-title {
+//   font-weight: 700;
+//   font-size: 36px;
+//   margin: 25px 0;
+
+//   @include small {
+//     font-size: 18px;
+//   }
+
+//   &::after {
+//     margin: 25px 0;
+//     content: '';
+//     display: block;
+//     background-color: $color-primary;
+//     width: 400px;
+//     height: 4px;
+
+//     @include small {
+//       width: 120px;
+//     }
+//   }
+// }
+
+// .page-content {
+//   padding: 25px 0 120px;
+
+//   @include small {
+//     padding: 0 0 45px;
+//   }
+// }

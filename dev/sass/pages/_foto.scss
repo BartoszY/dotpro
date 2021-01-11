@@ -1,7 +1,19 @@
+.enlarge-hover {
+  display: block;
+  position: relative;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+}
+
 .pf-heros {
   position: relative;
   margin: 100px 0 100px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 
   @include small {
     text-align: center;
@@ -12,6 +24,7 @@
       position: absolute;
       top: -100px;
       left: 0;
+      z-index: 10;
 
       @include small {
         display: none;
@@ -234,6 +247,11 @@
 
   &--center {
     text-align: center;
+
+    img {
+      display: block;
+      margin: auto;
+    }
   }
 }
 
@@ -258,6 +276,7 @@
       top: 200px;
       right: 0;
       position: absolute;
+      z-index: 10;
       max-width: 50%;
 
       @include small {
@@ -277,6 +296,8 @@
   margin-top: -135px;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 100;
 }
 
 .load-more-photos {
