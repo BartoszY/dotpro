@@ -50,7 +50,7 @@
 				<a class="big-menu-item" href="#">Case Studies</a>
 
 				<div class="duo-menu-item">
-					<a class="big-menu-item" href="#">Kontakt</a>
+					<a class="big-menu-item" href="/kontakt">Kontakt</a>
 					<a class="big-menu-item" href="#">About</a>
 				</div>
 			</div>

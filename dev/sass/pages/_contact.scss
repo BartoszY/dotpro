@@ -1,0 +1,31 @@
+.contact-content {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 100px;
+
+  @include desktop {
+    grid-gap: 40px;
+  }
+
+  @include medium {
+    display: block;
+  }
+
+  article {
+    font-size: 16px;
+  }
+
+  .wpcf7 {
+    padding-top: 25px;
+
+    .wpcf7-duo {
+      margin-bottom: 25px;
+    }
+
+    .wpcf7-submit {
+      width: auto;
+      padding: 10px 45px;
+    }
+  }
+}

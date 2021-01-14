@@ -13,7 +13,7 @@
         <a href="#" class="big-links__item">Portfolio</a>
         <a href="#" class="big-links__item">Case studies</a>
         <a href="#" class="big-links__item">About</a>
-        <a href="#" class="big-links__item">Kontakt</a>
+        <a href="/kontakt" class="big-links__item">Kontakt</a>
       </div>
     </div>
 
