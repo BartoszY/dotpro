@@ -89,7 +89,7 @@ gulp.task('js', function() {
     .pipe( rename({ extname: '.min.js' }) )
     .pipe( buffer() )
     .pipe( sourcemaps.init({ loadMpas: true }) )
-    // .pipe( uglify() )
+    .pipe( uglify() )
     .pipe( sourcemaps.write('./') )
     .pipe( gulp.dest(path.prod.js) )
 });
