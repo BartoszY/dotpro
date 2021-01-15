@@ -8,9 +8,11 @@ get_header();
 <main class="main">
 <?php while ( have_posts() ) : the_post(); ?>
 
-  <div class="sticky-nav">
+  <!-- <div class="sticky-nav">
     <?php wp_nav_menu(array('theme_location' => 'foto-menu', 'menu_id' => 'foto-menu', 'menu_class' => 'sticky-nav__menu', 'container' => '')); ?>
-  </div>
+  </div> -->
+
+  <button class="scroll-to-top"><img src="<?= get_template_directory_uri(); ?>/prod/img/arrow-up.svg" alt="Do góry"></button>
 
   <div class="page-content">
     <div class="container">
@@ -88,11 +90,11 @@ get_header();
       <div class="images-with-buttons">
         <div class="images-with-buttons__left" data-aos="fade-up" data-aos-delay="100">
           <img class="enlarge-hover" src="<?= get_template_directory_uri(); ?>/prod/img/8.png" alt="">
-          <a href="#" class="button button--big">Agencja reklamowa</a>
+          <a href="/kontakt" class="button button--big">Agencja reklamowa</a>
         </div>
 
         <div class="images-with-buttons__right" data-aos="fade-up" data-aos-delay="300">
-          <a href="#" class="button button--big">Produkcja filmowa</a>
+          <a href="/kontakt" class="button button--big">Produkcja filmowa</a>
           <img class="enlarge-hover" src="<?= get_template_directory_uri(); ?>/prod/img/9.png" alt="">
         </div>
       </div>
@@ -125,9 +127,9 @@ get_header();
         <img class="enlarge-hover" src="<?= get_template_directory_uri(); ?>/prod/img/14.png" alt="">
       </div>
 
-      <div class="load-more-photos-wrapper" data-aos="fade-up" data-aos-delay="300">
+      <!-- <div class="load-more-photos-wrapper" data-aos="fade-up" data-aos-delay="300">
         <button class="load-more-photos"><img src="<?= get_template_directory_uri(); ?>/prod/img/arrow.svg" alt=""></button>
-      </div>
+      </div> -->
 
 
     </div>

@@ -8,9 +8,11 @@ get_header();
 <main class="main">
 <?php while ( have_posts() ) : the_post(); ?>
 
-  <div class="sticky-nav">
+  <!-- <div class="sticky-nav">
     <?php wp_nav_menu(array('theme_location' => 'foto-menu', 'menu_id' => 'foto-menu', 'menu_class' => 'sticky-nav__menu', 'container' => '')); ?>
-  </div>
+  </div> -->
+
+  <button class="scroll-to-top"><img src="<?= get_template_directory_uri(); ?>/prod/img/arrow-up.svg" alt="Do góry"></button>
 
   <div class="page-content">
     <div class="container">

@@ -5,14 +5,16 @@ fixedHeader();
 menuItemHover();
 
 AOS.init({
-  // duration: 400,
   disable: function() {
     var maxWidth = 768;
     return window.innerWidth < maxWidth;
   }
 });
 
-/* Helpers */
-// function isMobile() {
-//   return window.innerWidth <= 1024 ? true : false;
-// }
+
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+if (scrollToTopButton) {
+  scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+  });
+}
