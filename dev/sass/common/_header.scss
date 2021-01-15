@@ -275,6 +275,12 @@
       display: block;
       text-align: center;
     }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
