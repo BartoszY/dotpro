@@ -36,10 +36,6 @@
 
 		<div class="nav__menus">
 			<div class="nav__grid">
-				<!-- <?php wp_nav_menu(array('theme_location' => 'main-menu-first', 'menu_id' => 'main-menu-first', 'menu_class' => 'header__nav__menu', 'container' => '')); ?> -->
-				<!-- <?php wp_nav_menu(array('theme_location' => 'main-menu-second', 'menu_id' => 'main-menu-second', 'menu_class' => 'header__nav__menu', 'container' => '')); ?> -->
-				<!-- <?php wp_nav_menu(array('theme_location' => 'main-menu-third', 'menu_id' => 'main-menu-third', 'menu_class' => 'header__nav__menu', 'container' => '')); ?> -->
-
 				<?php wp_nav_menu(array('theme_location' => 'main-menu-first', 'walker' => new WPDocs_Walker_Nav_Menu() )); ?>
 				<?php wp_nav_menu(array('theme_location' => 'main-menu-second', 'walker' => new WPDocs_Walker_Nav_Menu() )); ?>
 				<?php wp_nav_menu(array('theme_location' => 'main-menu-third', 'walker' => new WPDocs_Walker_Nav_Menu() )); ?>

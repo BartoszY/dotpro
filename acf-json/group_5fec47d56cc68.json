@@ -42,7 +42,21 @@
             {
                 "param": "nav_menu",
                 "operator": "==",
-                "value": "all"
+                "value": "location\/main-menu-first"
+            }
+        ],
+        [
+            {
+                "param": "nav_menu",
+                "operator": "==",
+                "value": "location\/main-menu-second"
+            }
+        ],
+        [
+            {
+                "param": "nav_menu",
+                "operator": "==",
+                "value": "location\/main-menu-third"
             }
         ]
     ],
@@ -54,5 +68,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1609854433
+    "modified": 1610641957
 }

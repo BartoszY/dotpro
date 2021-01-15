@@ -37,12 +37,21 @@
       font-size: 14px;
     }
 
+    @include small {
+      margin: 25px 0;
+      display: block;
+    }
+
     a {
       display: flex;
       align-items: center;
       // display: none;
       position: relative;
       transition: .3s;
+
+      @include small {
+        margin: 10px 0;
+      }
 
       &::before {
         content: '';
@@ -146,6 +155,7 @@
     img {
       height: 100%;
       object-fit: cover;
+      height: auto;
 
       @include small {
         height: auto;

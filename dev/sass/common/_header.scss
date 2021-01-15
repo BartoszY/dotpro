@@ -12,6 +12,10 @@
   justify-content: space-between;
   transition: .3s;
 
+  @include medium {
+    padding: 20px;
+  }
+
   &__burger {
     border: none;
     padding: 0;
@@ -33,7 +37,6 @@
 }
 
 .nav {
-  // display: none;
   opacity: 0;
   transform: translateY(-100%);
   transition: .4s;
@@ -44,8 +47,14 @@
   width: 100%;
   height: 100%;
   z-index: 5000;
-  // background: #FCFBF7;
   padding-top: 170px;
+
+  @include small {
+    padding-top: 80px;
+    overflow-y: auto;
+    max-height: 100vh;
+    background: #FCFBF7;
+  }
 
   &__bg {
     position: absolute;
@@ -57,6 +66,10 @@
     background: #FCFBF7;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    @include small {
+      display: none;
+    }
 
     &__item {
       display: block;
@@ -70,36 +83,57 @@
 
       transition: .2s;
       opacity: 0;
-
-      // &::after {
-      //   content: '';
-      //   background-color: rgba(255,255,255,.8);
-      //   position: absolute;
-      //   left: 0;
-      //   top: 0;
-      //   width: 100%;
-      //   height: 100%;
-      //   z-index: 1;
-      // }
     }
   }
 
   &__menus {
     margin: auto;
     padding: 0 200px;
-    // padding-left: 200px;
+
+    @include desktop {
+      padding: 0 150px;
+    }
+
+    @include containerSize {
+      padding: 0 100px;
+    }
+
+    @include medium {
+      padding: 0 20px;
+    }
   }
 
   &__grid {
     margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 400px;
+    grid-gap: 300px;
+
+    @include large {
+      grid-gap: 120px;
+    }
+
+    @include medium {
+      grid-gap: 40px;
+    }
+
+    @include medium {
+      display: block;
+    }
+
+    @include small {
+      margin-bottom: 45px;
+    }
   }
 
   .menu {
     position: relative;
     min-height: 250px;
+
+    @include small {
+      margin-bottom: 45px;
+      min-height: inherit;
+    }
   }
 
   .menu-title {
@@ -114,6 +148,19 @@
 
     width: 400px;
 
+    @include medium {
+      width: inherit;
+      transform: inherit;
+      position: inherit;
+      left: inherit;
+      top: inherit;
+      text-align: left;
+    }
+
+    @include small {
+      text-align: center;
+    }
+
     &:hover {
       opacity: .7;
     }
@@ -126,20 +173,32 @@
     margin: 30px 0;
     transition: .3s;
 
+    @include small {
+      margin: 15px 0;
+      text-align: center;
+      display: block;
+    }
+
     &::before {
       content: '';
       position: absolute;
-      width: 8px;
-      height: 1px;
-      background-color: #858585;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: $color-primary;
 
       opacity: 0;
       transition: .3s;
+
+      @include small {
+        display: none;
+      }
     }
 
     &:hover {
-      color: #858585;
-      transform: translateX(14px);
+      @include from-small {
+        transform: translateX(14px);
+      }
 
       &::before {
         opacity: 1;
@@ -153,6 +212,12 @@
     font-weight: 900;
     font-size: 24px;
     font-family: $font-secondary;
+
+    @include small {
+      margin: 25px 0;
+      display: block;
+      text-align: center;
+    }
 
     &:hover {
       opacity: .7;
@@ -197,6 +262,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include medium {
+      bottom: 40px;
+      padding: 0 20px;
+    }
+
+    @include small {
+      padding-bottom: 45px;
+      position: inherit;
+      bottom: inherit;
+      display: block;
+      text-align: center;
+    }
   }
 }
 

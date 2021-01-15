@@ -9,17 +9,7 @@ get_header();
 <?php while ( have_posts() ) : the_post(); ?>
 
   <div class="sticky-nav">
-    <nav class="sticky-nav__menu">
-      <a href="#">fotografia biznesowa</a>
-      <a href="#">fotografia architektury</a>
-      <a href="#">zdjęcia aranżowane</a>
-      <a href="#">fotografia reklamowa</a>
-      <a href="#">fotografia eventowa</a>
-      <a href="#">packshoty</a>
-      <a href="#">fotografia wnętrz</a>
-      <a href="#">fotografia dla gastronomii</a>
-      <a href="#">key visuale</a>
-    </nav>
+    <?php wp_nav_menu(array('theme_location' => 'foto-menu', 'menu_id' => 'foto-menu', 'menu_class' => 'sticky-nav__menu', 'container' => '')); ?>
   </div>
 
   <div class="page-content">
@@ -29,17 +19,7 @@ get_header();
         <h1 class="page-header__title heading"><?php the_title() ?></h1>
         <div></div>
 
-        <div class="page-header__menu">
-          <a href="/fotografia-biznesowa/">fotografia biznesowa</a>
-          <a href="#">fotografia architektury</a>
-          <a href="#">zdjęcia aranżowane</a>
-          <a href="#">fotografia reklamowa</a>
-          <a href="#">fotografia eventowa</a>
-          <a href="#">packshoty</a>
-          <a href="#">fotografia wnętrz</a>
-          <a href="#">fotografia dla gastronomii</a>
-          <a href="#">key visuale</a>
-        </div>
+        <?php wp_nav_menu(array('theme_location' => 'foto-menu', 'menu_id' => 'foto-menu', 'menu_class' => 'page-header__menu', 'container' => '')); ?>
       </div>
 
 
