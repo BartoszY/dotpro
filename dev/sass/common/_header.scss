@@ -228,6 +228,10 @@
     width: 200px;
     position: relative;
 
+    @include small {
+      width: auto;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -237,10 +241,22 @@
       height: 1px;
       background-color: #232323;
       transform: rotate(135deg);
+
+      @include small {
+        display: none;
+      }
     }
 
     a {
       position: absolute;
+
+      @include small {
+        position: inherit;
+        left: inherit !important;
+        right: inherit !important;
+        top: inherit !important;
+        bottom: inherit !important;
+      }
 
       &:first-child {
         left: 0;

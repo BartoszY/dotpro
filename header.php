@@ -42,12 +42,12 @@
 			</div>
 
 			<div class="nav__grid">
-				<a class="big-menu-item" href="#">Portfolio</a>
-				<a class="big-menu-item" href="#">Case Studies</a>
+				<a class="big-menu-item" href="/strona-w-budowie/">Portfolio</a>
+				<a class="big-menu-item" href="/strona-w-budowie/">Case Studies</a>
 
 				<div class="duo-menu-item">
 					<a class="big-menu-item" href="/kontakt">Kontakt</a>
-					<a class="big-menu-item" href="#">About</a>
+					<a class="big-menu-item" href="/kontakt">About</a>
 				</div>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 				dotpro.pl © - <?= date('Y') ?> - wszelkie prawa zastrzeżone
 			</div>
 			<div>
-				<a href="#">Polityka prywatności</a> <span class="vertical-spacer">|</span> <a href="#">Dane firmy</a>
+				<a href="polityka-prywatnosci">Polityka prywatności</a> <span class="vertical-spacer">|</span> <a href="/kontakt">Dane firmy</a>
 			</div>
 		</div>
 	</nav>
