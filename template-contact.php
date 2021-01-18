@@ -10,7 +10,7 @@ get_header();
 
   <div class="page-content">
     <div class="container">
-      <h1 class="page-title heading">Skontaktuj się z nami</h1>
+      <h1 class="page-title heading"><?php the_title() ?></h1>
 
       <div class="contact-content">
         <article>
