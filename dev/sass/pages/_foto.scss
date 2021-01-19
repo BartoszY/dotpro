@@ -240,7 +240,6 @@
 
 
 .load-more-photos-wrapper {
-  margin-top: -135px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -271,5 +270,25 @@
     img {
       filter: invert(1);
     }
+  }
+
+  &--active {
+    opacity: 0;
+
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+
+
+
+
+.more-modules-wrapper {
+  display: none;
+
+  &--active {
+    display: block;
   }
 }
