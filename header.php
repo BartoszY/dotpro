@@ -19,7 +19,7 @@
 
 	<header class="header">
 		<a href="<?php echo get_home_url(); ?>" class="header__logo">
-			<img src="<?= get_template_directory_uri(); ?>/prod/img/logo.png" alt="<?php bloginfo('name'); ?>">
+			<img src="<?= get_template_directory_uri(); ?>/prod/img/dotpro.svg" alt="<?php bloginfo('name'); ?>">
 		</a>
 
 		<button class="header__burger" data-burger>
