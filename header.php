@@ -42,12 +42,12 @@
 			</div>
 
 			<div class="nav__grid">
-				<a class="big-menu-item" href="/strona-w-budowie/">Portfolio</a>
-				<a class="big-menu-item" href="/strona-w-budowie/">Case Studies</a>
+				<a class="big-menu-item disabled-link" href="/strona-w-budowie/">Portfolio</a>
+				<a class="big-menu-item disabled-link" href="/strona-w-budowie/">Case Studies</a>
 
 				<div class="duo-menu-item">
 					<a class="big-menu-item" href="/kontakt">Kontakt</a>
-					<a class="big-menu-item" href="/kontakt">About</a>
+					<a class="big-menu-item disabled-link" href="/kontakt">About</a>
 				</div>
 			</div>
 		</div>

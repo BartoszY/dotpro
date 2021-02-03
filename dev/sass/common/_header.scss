@@ -55,11 +55,16 @@
   z-index: 5000;
   padding-top: 15vh;
 
-  @include small {
+  @include medium {
     padding-top: 80px;
     overflow-y: auto;
     max-height: 100vh;
     background: #FCFBF7;
+  }
+
+  @media screen and (max-height: 750px) and (min-width: 1024px) {
+    padding-top: 10vh;
+    overflow-y: scroll;
   }
 
   &__bg {
@@ -73,7 +78,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    @include small {
+    @include medium {
       display: none;
     }
 
@@ -127,7 +132,7 @@
       display: block;
     }
 
-    @include small {
+    @include medium {
       margin-bottom: 45px;
     }
   }
@@ -136,7 +141,7 @@
     position: relative;
     min-height: 250px;
 
-    @include small {
+    @include medium {
       margin-bottom: 45px;
       min-height: inherit;
     }
@@ -161,10 +166,10 @@
       left: inherit;
       top: inherit;
       text-align: left;
+      text-align: center;
     }
 
-    @include small {
-      text-align: center;
+    @include medium {
     }
 
     &:hover {
@@ -179,7 +184,7 @@
     margin: 30px 0;
     transition: .3s;
 
-    @include small {
+    @include medium {
       margin: 15px 0;
       text-align: center;
       display: block;
@@ -196,13 +201,13 @@
       opacity: 0;
       transition: .3s;
 
-      @include small {
+      @include medium {
         display: none;
       }
     }
 
     &:hover {
-      @include from-small {
+      @include from-medium {
         transform: translateX(14px);
       }
 
@@ -219,7 +224,7 @@
     font-size: 24px;
     font-family: $font-secondary;
 
-    @include small {
+    @include medium {
       margin: 25px 0;
       display: block;
       text-align: center;
@@ -234,7 +239,7 @@
     width: 200px;
     position: relative;
 
-    @include small {
+    @include medium {
       width: auto;
     }
 
@@ -248,7 +253,7 @@
       background-color: #232323;
       transform: rotate(135deg);
 
-      @include small {
+      @include medium {
         display: none;
       }
     }
@@ -256,7 +261,7 @@
     a {
       position: absolute;
 
-      @include small {
+      @include medium {
         position: inherit;
         left: inherit !important;
         right: inherit !important;
@@ -285,12 +290,19 @@
     align-items: center;
     justify-content: space-between;
 
-    @include medium {
-      bottom: 40px;
-      padding: 0 20px;
+    @media screen and (max-height: 750px) and (min-width: 1024px) {
+      position: inherit;
+      bottom: inherit;
+      padding-bottom: 45px;
+      padding-top: 45px;
     }
 
-    @include small {
+    // @include medium {
+    //   bottom: 40px;
+    //   padding: 0 20px;
+    // }
+
+    @include medium {
       padding-bottom: 45px;
       position: inherit;
       bottom: inherit;
@@ -306,6 +318,12 @@
   }
 }
 
+
+.disabled-link {
+  color: #999;
+  pointer-events: none; 
+  cursor: default; 
+}
 
 
 .nav-active {
