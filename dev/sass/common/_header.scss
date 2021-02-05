@@ -13,12 +13,19 @@
   transition: .3s;
 
   @include medium {
-    padding: 20px;
+    padding: 15px 20px;
+
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
   }
 
   &__logo {
     img {
       width: 81px;
+
+      @include medium {
+        margin-top: 5px;
+      }
     }
   }
 
@@ -328,6 +335,11 @@
 
 .nav-active {
   .header {
+    @include medium {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
     &__burger {
       span {
         &:nth-child(1) {

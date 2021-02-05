@@ -1,5 +1,10 @@
 .home {
   .header {
+    @include medium {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    
     &__burger {
       display: none;
     }

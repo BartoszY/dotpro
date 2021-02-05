@@ -55,7 +55,7 @@ function ytheme_styles() {
     wp_register_style('aos_style', get_template_directory_uri() . '/libs/aos.css', array(), '2.9.2', 'all');
     wp_enqueue_style('aos_style');
 
-    wp_register_style('ytheme_style', get_template_directory_uri() . '/prod/css/main.css', array(), '1.1.1', 'all');
+    wp_register_style('ytheme_style', get_template_directory_uri() . '/prod/css/main.css', array(), '1.1.3', 'all');
     wp_enqueue_style('ytheme_style');
 }
 add_action('wp_enqueue_scripts', 'ytheme_styles', 10);
